@@ -1,0 +1,598 @@
+@font-face {
+font-family: KFhimajiFUDE;
+src: url("../fonts/KFhimajiFUDE.otf") format("opentype");
+}
+
+@font-face {
+font-family: KFhimaji;
+src: url("../fonts/KFhimaji.otf") format("opentype");
+}
+
+* { font-family: 'Roboto', sans-serif; line-height:1.2; vertical-align:middle; }
+
+body, html { background: #d5d5d5; width:100%; height:100%; }
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration:none;
+	color:#343434;
+	text-
+}
+
+footer {
+	text-align:center;
+	width:100%;
+	clear:both;
+}
+
+span#bio{ display:block; margin-top:25px; }
+
+h1 {
+  font-size:2rem;
+  font-weight:300;
+  text-shadow:#fcfcfc 1px 1px 0px;
+}
+
+strong {
+	font-weight:300;
+	color:#539D00;
+}
+
+h2, footer {
+  font-size: 0.9rem;
+  line-height:1.5;
+  color:gray;
+  font-weight:200;
+  text-shadow:#fcfcfc 1px 1px 0px;
+}
+
+
+
+header {
+/*  position:fixed;
+  z-index:-1;
+  top:0; left:0; right:0;*/
+  margin:0 auto;
+  width:100%;
+  height:12rem;
+  transition:transform .5s, opacity .3s;
+  background: #60d48c;
+  transition: all 1s ease;
+}
+
+header h1.head {
+	font-family: 'Shojumaru', cursive; 
+	text-align:center;
+	line-height:5rem;
+	font-size:5rem;
+	text-shadow: 0 1px 1px #fff; 
+	z-index:5;
+	padding-top:2rem;
+	transition: all 1s ease;
+}
+
+h1 span.japanese {
+	font-family: 'KFhimaji', cursive;
+}
+header h2 {
+	color:#343434;
+	font-size:1rem;
+	text-align:center;
+	marin-top:-3em;
+	font-family: 'Shojumaru', cursive;
+	text-shadow: 0 1px 1px #fff; 
+	transition: all 1s ease;
+}
+
+main {
+  display:block;
+  position:relative;
+  width: 100%/*30rem*/;
+  margin: 0 auto;
+  padding:1.5rem 0 0 0;
+  background:#d5d5d5;
+  outline
+  border-radius:.25rem;
+}
+
+.card {
+  padding:1.5rem;
+  
+  height:5%/*6rem*/;
+  float:left;
+  width:45%;
+  /*box-shadow*/
+-webkit-box-shadow:0 1px 2px #aaa;
+   -moz-box-shadow:0 1px 2px #aaa;
+        box-shadow:0 1px 2px #aaa;
+background:white;
+margin:0 1rem 1rem;
+/*border-radius*/
+-webkit-border-radius:3px;
+   -moz-border-radius:3px;
+        border-radius:3px;
+	transition: all 1s ease;
+/*animation*/
+
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.8s;
+    -moz-transform-origin:top left;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:top left;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+    transform-origin:top left;
+}
+
+.card:nth-child(even) {
+/*float:left;*/
+
+/*animation-name*/
+-webkit-animation-name:dropHeaderR;
+   -moz-animation-name:dropHeaderR;
+    -ms-animation-name:dropHeaderR;
+     -o-animation-name:dropHeaderR;
+        animation-name:dropHeaderR;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:1;
+   -moz-animation-iteration-count:1;
+    -ms-animation-iteration-count:1;
+     -o-animation-iteration-count:1;
+        animation-iteration-count:1;
+/*animation-timing-function*/
+-webkit-animation-timing-function:ease-in;
+   -moz-animation-timing-function:ease-in;
+    -ms-animation-timing-function:ease-in;
+     -o-animation-timing-function:ease-in;
+        animation-timing-function:ease-in;
+/*animation-duration*/
+-webkit-animation-duration:0.8s;
+   -moz-animation-duration:0.8s;
+    -ms-animation-duration:0.8s;
+     -o-animation-duration:0.8s;
+        animation-duration:0.8s;
+/*animation-delay*/
+-webkit-animation-delay:.1s;
+   -moz-animation-delay:.1s;
+    -ms-animation-delay:.1s;
+     -o-animation-delay:.1s;
+        animation-delay:.1s;
+/*transform-origin*/
+-webkit-transform-origin:top right;
+   -moz-transform-origin:top right;
+    -ms-transform-origin:top right;
+     -o-transform-origin:top right;
+        transform-origin:top right;
+}
+
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(40rem) rotate(45deg);
+    }
+    100% {
+        -moz-transform: translateY(0) rotate(0deg);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(40rem) rotate(45deg);
+    }
+    100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(40rem) rotate(45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+@-moz-keyframes dropHeaderR {
+    0% {
+        -moz-transform: translateY(40rem) rotate(-45deg);
+    }
+    100% {
+        -moz-transform: translateY(0) rotate(0deg);
+    }
+}
+@-webkit-keyframes dropHeaderR {
+    0% {
+        -webkit-transform: translateY(40rem) rotate(-45deg);
+    }
+    100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+    }
+}
+@keyframes dropHeaderR {
+    0% {
+        transform: translateY(40rem) rotate(-45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.card:nth-child(even):after {
+	clear:both;
+}
+.card .text {
+	float:left;
+	width:70%;
+}
+
+.card img.icon {
+	float:right;
+	width:25%;
+	height:auto;
+	transition: all 0.3s ease;
+}
+
+a.next, a.close{
+	position:absolute;
+	top:0rem;
+
+	text-decoration:none;
+	transition: all 0.5s ease;
+	color:blue;
+	display:none;
+}
+
+a.close {
+	left:25px;
+	text-align:left;
+}
+
+a.next {
+	right:25px;
+	text-align:right;
+}
+
+
+
+.active {
+	width:95% !important;
+	height:auto !important;
+	float:none !important;
+	margin:0 auto !important;
+}
+
+.card.active a.close, .card.active a.next { display:block; }
+
+.card article.more {
+	visiblity:hidden;
+	display:none;
+}
+
+.card.active img.icon{ width:5%; }
+
+.card.active article.more {
+	visiblity:visible;
+	display:block;
+	clear:both;
+	margin: .5rem auto 0 auto;
+	width:100%;
+}
+
+.more a img {
+	width:auto;
+	max-width:15%;
+	max-height:30%;
+	height:auto;
+	padding:.5%;
+	
+}
+
+img.sns {
+	float:left;
+	margin-top:10px;
+	margin-left:2px;
+	width:40px !important;
+	height:40px;
+}
+
+img.deviant {
+	width:36px !important;
+	height:36px !important;
+	margin-top:12px;
+	margin-left:3px;
+}
+
+div#me {
+-webkit-border-radius:300px;
+   -moz-border-radius:300px;
+        border-radius:300px;
+	height:130px;
+	background: url('../images/me.jpg') center center no-repeat;
+	background-size:cover;
+	width: 130px;
+	left: 3%;
+	float:left;
+	margin:0 15px;
+}
+
+span#bio { display:block;}
+
+/* Desktop Resized */
+@media only screen 
+and (min-width : 300px) 
+and (max-width : 800px){
+/* Styles */
+	.card {
+  	float:none !important;
+  	width:95%;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  header {
+		height:8rem;
+	}
+	a.close{
+		top:0rem !important;
+		left:25px;
+	}
+  header h1.head {
+		line-height:5rem;
+		font-size:4rem;
+		padding-top:0;
+	}
+	.card:after {
+		clear:both;
+	}
+	main {
+  	margin: 0 auto;
+  }
+	.card.active img.icon{ width:15%; }
+	h1 {
+  	font-size:2.5rem;
+  }
+  h2 {
+		font-size:1.5rem;
+  }
+}
+
+
+@media only screen 
+and (min-width : 511px) 
+and (max-width : 610px) {
+	header h1.head {
+		line-height:4rem;
+		font-size:3rem;
+	}
+	
+	header h2 {
+		font-size:.8rem;
+		marin-top:-3em;
+	}
+}
+@media only screen 
+and (min-width : 200px) 
+and (max-width : 510px) {
+	header h1.head {
+		font-size:2.5rem;
+	}
+	
+	header h2 {
+		font-size:.8rem;
+		marin-top:-3em;
+	}
+	.card {
+		/*float: right;*/
+		/*width: 30%;*/
+	}
+}
+
+@media only screen 
+and (min-width : 1500px) 
+and (max-width : 3000px) {
+	header{ height: 20rem;}
+	header h1.head {
+		line-height: 12rem;
+		font-size:10rem;
+	}
+	
+	header h2 {
+		font-size:3rem;
+		marin-top:-3em;
+	}
+	.card {
+		/*float: right;*/
+		width: 30%;
+	}
+}
+
+@media only screen 
+and (min-width : 1200px) 
+and (max-width : 1500px) {
+	header{ height:20rem;}
+	header h1.head {
+		line-height: 12rem;
+		font-size:8rem;
+	}
+	
+	header h2 {
+		font-size:2rem;
+		marin-top:-3em;
+	}
+	
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px)
+and (max-device-width : 800px)
+and (orientation : landscape) {
+/* Styles */
+	.card {
+		width:46% !important;
+		float:left !important;
+		margin: 0 0.5em 1em;
+	}
+	.card:nth-child(even){
+		float:right !important;
+	}
+	header h1.head {
+		line-height:4rem;
+		font-size:3.5rem;
+		padding-top:0;
+	}
+	header h2 {
+		font-size:.8rem;
+		margin-top: -.5rem;
+	}
+	header {
+		height:5rem;
+	}
+	a.close{
+		top:0rem !important;
+		left:25px;
+	}
+	main {
+		margin: 0 auto;
+	}
+	h1 {
+		font-size:1.2rem;
+	}
+	h2 {
+		font-size:.7rem;
+	}
+	.card img.icon { width:30%; }
+	.active {
+		width:88% !important;
+		height:auto;
+		margin:0 auto !important;
+		float:none !important;
+	}
+	.card.active:nth-child(even){
+		width:88% !important;
+		height:auto;
+		margin:0 auto !important;
+		float:none !important;
+	}
+	.more a img {
+		max-width:24%;
+		max-height:40%;
+	}
+	.card.active img.icon{ width:15%; }
+}
+
+/* (portrait phone) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 599px) 
+and (orientation : portrait) {
+/* Styles */
+	.card {
+  	float:none !important;
+  	width:90%;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  header h1.head {
+		line-height:4rem;
+		font-size:2.2rem;
+		padding-top:0;
+	}
+	header h2 {
+		font-size:.5rem;
+		margin-top: -1rem;
+	}
+	header {
+		height:5rem;
+	}
+	a.close{
+		top:0rem !important;
+		left:25px;
+	}
+	main {
+  	margin: 0 auto;
+  }
+  h1 {
+  	font-size:1.7rem;
+  }
+  h2 {
+		font-size:1rem;
+  }
+	.card img.icon { width:30%; }
+	.more a img {
+		max-width:32%;
+		max-height:40%;
+	}
+	.card.active img.icon{ width:15%; }
+	img.sns {
+		float:left;
+		margin-top:10px;
+		margin-left:2px;
+		width:36px !important;
+		height:36px;
+	}
+	
+	img.deviant {
+		width:32px !important;
+		height:32px !important;
+		margin-top:12px;
+		margin-left:3px;
+	}
+
+}
+
+/* (portrait tablet) ----------- */
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+	.card {
+  	float:none !important;
+  	width:95%;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  header {
+		height:8rem;
+	}
+	a.close{
+		top:0rem !important;
+		left:25px;
+	}
+  header h1.head {
+		line-height:5rem;
+		font-size:4rem;
+		padding-top:0;
+	}
+	.card:after {
+		clear:both;
+	}
+	main {
+  	margin: 0 auto;
+  }
+	.card.active img.icon{ width:15%; }
+	h1 {
+  	font-size:2.5rem;
+  }
+  h2 {
+		font-size:1.5rem;
+  }
+}
+
+.hide{
+	display:none;
+	position:absolute;
+	left:-200%;
+}
+
